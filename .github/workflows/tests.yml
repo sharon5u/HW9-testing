@@ -1,0 +1,16 @@
+name: Collision tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run HW9 collision tests
+        run: node --test tests/*.test.js
+      - name: Run existing gameplay regression checks
+        run: node test-engine.js
+      - name: Run existing animation checks
+        run: node test-effects.js
