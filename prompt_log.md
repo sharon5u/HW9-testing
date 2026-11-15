@@ -1,4 +1,4 @@
-# Prompt log
+# Prompt log - CodeX
 - brianstorm what are some tests suitable for my rolling sky game
 - For your Rolling Sky game, these would be useful tests. The first eight ideas extend your current collision suite.
 Area	Scenario to test	Expected behavior
