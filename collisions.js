@@ -17,7 +17,7 @@
   // A jump height of exactly 10 clears a gap under the existing game rules.
   function fallsThroughGap(type, dx, dy, width, depth, jumpHeight) {
     return type === 'gap' && dx < width / 2 &&
-      dy < depth / 2 && jumpHeight <= 10;
+      dy < depth / 2 && jumpHeight < 10;
   }
 
   const api = { isOutsideRoad, hitsObstacle, fallsThroughGap };
